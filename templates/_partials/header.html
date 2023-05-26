@@ -1,0 +1,245 @@
+{%load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'assets/images/favicon.png' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/boxicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+</head>
+
+<body>
+    <div class="topbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 tob-contact-row">
+                    <div class="topbar-contact">
+                        <ul>
+                            <li><i class="bx bxs-phone"></i><a href="#">
+                                +92 309 5259359</a></li>
+                            <li><i class="bx bxs-envelope"></i><a href="#">info@example.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-6">
+                    <div class="topbar-social">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="bx bxl-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bx bxl-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bx bxl-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6">
+                    <div class="custom-select languege-select">
+                        <select>
+                            <option value="0">ENG</option>
+                            <option value="1">BAN</option>
+                            <option value="2">FSP</option>
+                            <option value="3">CHI</option>
+                        </select>
+                        <div class="select-items select-hide">
+                            <div>BAN</div>
+                            <div>FSP</div>
+                            <div>CHI</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                        <div class="navbar-wrap">
+                            <div class="logo d-flex justify-content-between">
+                                <a href="#" class="navbar-brand"> 
+                                    <img src="{% static 'assets/images/logo.png' %}" alt="" width="340" height="100"></a>
+                            </div>
+                            <div class="navbar-icons">
+                                <div class="searchbar-open">
+                                    <i class="flaticon-magnifier"></i>
+                                </div>
+                                <div class="user-dropdown-icon">
+                                    <i class="flaticon-user"></i>
+                                    <div class="account-dropdown">
+                                        <ul>
+                                            <li class="account-el">
+                                                <i class='bx bx-user-pin'></i>
+                                                <a href="#">Sign in</a>
+                                            </li>
+                                            <li class="account-el">
+                                                <i class='bx bxs-user-account'></i>
+                                                <a href="#">My Account</a>
+                                            </li>
+                                            <li class="account-el">
+                                                <i class='bx bx-extension'></i>
+                                                <a href="#">Settings</a>
+                                            </li>
+                                            <li class="account-el">
+                                                <i class='bx bx-log-in-circle'></i>
+                                                <a href="#">Log out</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="mobile-menu d-flex ">
+                                    <div class="top-search-bar m-0 d-block d-xl-none">
+                                    </div>
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                        <nav class="main-nav">
+                            <div class="navber-logo-sm">
+                                <img src="{% static 'assets/images/logo-2.png' }" alt="" class="img-fluid">
+              </div>
+              <ul>
+<!--                <li class="has-child-menu">-->
+<!--                  <a href="javascript:void(0)">Home</a>-->
+<!--                  <i class="fl flaticon-plus">+</i>-->
+<!--                  <ul class="sub-menu">-->
+<!--                    <li><a href="index-2.html" class="sub-item">Home Page 1</a></li>-->
+<!--                    <li><a href="index2.html" class="sub-item">Home Page 2</a></li>-->
+<!--                  </ul>-->
+<!--                </li>-->
+                  <li><a href="/">Home </a></li>
+                  <li><a href="/destination">Destinations </a></li>
+                  <li><a href="/guide">Tour Guides </a></li>
+                <li><a href="/about">About us </a></li>
+                <li><a href="/gallary">Gallary </a></li>
+                <li><a href="/packages">Tour Packages </a></li>
+
+                <!-- <li class="has-child-menu">
+                  <a href="javascript:void(0)">Tour Package</a>
+                  <i class="fl flaticon-plus">+</i>
+                  <ul class="sub-menu">
+                    <li><a href="/packages" class="sub-item">package</a></li> -->
+                    <!-- <li><a href="package-sidebar.html" class="sub-item">package sidebar</a></li>
+                    <li><a href="package-standard.html" class="sub-item">package standard</a></li>
+                    <li><a href="package-details.html" class="sub-item">package details</a></li> -->
+                  <!-- </ul>
+                </li> -->
+                <!-- <li class="has-child-menu">
+                  <a href="javascript:void(0)">Blogs</a>
+                  <i class="fl flaticon-plus">+</i>
+                  <ul class="sub-menu">
+                    <li><a href="blog.html" class="sub-item">Blog page</a></li>
+                    <li><a href="blog-sidebar.html" class="sub-item">Blog sidebar</a></li>
+                    <li><a href="blog-standard.html" class="sub-item">Blog standard</a></li>
+                    <li><a href="blog-details.html" class="sub-item">blog-details </a></li>
+                  </ul>
+                </li> -->
+                <!-- <li class="has-child-menu">
+                  <a href="javascript:void(0)">Pages</a>
+                  <i class="fl flaticon-plus">+</i>
+                  <ul class="sub-menu">
+                    <li><a href="gallary.html" class="sub-item">gallary page</a></li>
+                    <li><a href="guide.html" class="sub-item">guide page</a></li>
+                    <li><a href="destination.html" class="sub-item">destination page</a></li>
+                    <li><a href="404.html" class="sub-item">error page </a></li>
+                    <li><a href="faq.html" class="sub-item">FAQ page </a></li>
+                  </ul>
+                </li> -->
+                <li><a href="contact">Contact Us </a></li>
+              </ul>
+              <div class="navbar-icons-2">
+                <div class="searchbar-open">
+                  <i class="flaticon-magnifier"></i>
+                </div>
+                <div class="user-dropdown-icon">
+                    <i class="flaticon-user"></i>
+                    <div class="account-dropdown">
+                    <ul>
+                        {% if request.user.is_authenticated %}
+                    <li class=" account-el">
+                                <i class='bx bx-user-pin'></i>
+                                <a href="#">{{request.user.username}}</a>
+                                </li>
+                                <li class="account-el">
+                                    <i class='bx bx-log-out-circle'></i>
+                                    <a href="{% url 'logout_user' %}">Log out</a>
+                                </li>
+                                {% csrf_token %}
+                                {% else %}
+                                <li class="account-el">
+                                    <i class='bx bx-log-in-circle'></i>
+                                    <a href="{% url 'login' %}">Log in</a>
+                                    {% endif %}
+
+                                </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="sidebar-contact">
+                        <ul>
+                            <li class="sidebar-single-contact"><i class='bx bxs-phone'></i> <a
+                                    href="#">
+                                    +92 309 5259359</a></li>
+                            <li class="sidebar-single-contact"><i class='bx bxs-envelope'></i><a
+                                    href="https://demo.egenslab.com/cdn-cgi/l/email-protection#e68f888089a6839e878b968a83c885898b"><span
+                                        class="__cf_email__"
+                                        data-cfemail="deb7b0b8b19ebba6bfb3aeb2bbf0bdb1b3">[email&#160;protected]</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div class="main-searchbar">
+                <div class="searchbar-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <input type="text" placeholder="Search Here......">
+                <div class="searchbar-icon">
+                    <i class='bx bx-search'></i>
+                </div>
+            </div>
+        </form>
+        </div>
+    </header>

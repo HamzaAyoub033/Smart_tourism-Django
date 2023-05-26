@@ -1,0 +1,762 @@
+{% extends '_partials/base.html' %}
+{% load static %}
+{% block content %}
+<div class="main-banner">
+    <div class="banner-slider owl-carousel owl-loaded owl-drag">
+
+
+
+        <div class="owl-stage-outer">
+            <div class="owl-stage"
+                style="transform: translate3d(-4047px, 0px, 0px); transition: all 0s ease 0s; width: 9443px;">
+                <div class="owl-item cloned" style="width: 1349px;">
+                    <div class="slider-item slider-item-2">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                    Ranikot Fort </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item cloned" style="width: 1349px;">
+                    <div class="slider-item slider-item-3">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                White Palace Swat
+ </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item" style="width: 1349px;">
+                    <div class="slider-item slider-item-1">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                    Deosai Plains </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item active" style="width: 1349px;">
+                    <div class="slider-item slider-item-2">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                    Shangrila resort </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item" style="width: 1349px;">
+                    <div class="slider-item slider-item-3">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                    Neelum Valley </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item cloned" style="width: 1349px;">
+                    <div class="slider-item slider-item-1">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                    Naltar valley </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-item cloned" style="width: 1349px;">
+                    <div class="slider-item slider-item-2">
+                        <div class="container">
+                            <div class="slider-content wow fadeInLeft  animated" data-wow-delay="300ms"
+                                data-wow-duration="1500ms"
+                                style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                                <h2>Amazing Tour In
+                                    Bahawalpur </h2>
+                                <h5>7 Days, 8 Night Tour</h5>
+                                <div class="banner-btn">
+                                    <a href="/packages" class="btn-common">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                    class="bx bx-chevron-left"></i></button><button type="button" role="presentation"
+                class="owl-next"><i class="bx bx-chevron-right"></i></button></div>
+        <div class="owl-dots disabled"></div>
+    </div>
+</div>
+<div class="find-form">
+    <div class="container">
+        <form class="findfrom-wrapper" method="POST" action="startup">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-4">
+                    <input type="text" name="whereto" placeholder="Where To...">
+                </div>
+                <div class="col-lg-4">
+                    <input type="number" name="budget" placeholder="Enter your budget">
+                </div>
+                <div class="col-lg-4">
+                    <div class="calendar-input">
+                        <input type="date" name="check-in" class="input-field check-in hasDatepicker"
+                            placeholder="dd-mm-yy" id="dp1640084384686">
+                       
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4"><br>
+                    <div class="custom-select">
+                        <select name="person">
+                            <option value="0">Total No.of Persons</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                      
+                    </div>
+                </div>
+                <div class="col-lg-4"><br>
+                    <div class="custom-select">
+                        <select name="type">
+                            <option value="0">Travel Type</option>
+                            <option value="City Tours">City Tours</option>
+                            <option value="Vacation Tour">Vacation Tours</option>
+                            <option value="Couple Tours">Couple Tours </option>
+                            <option value="Adventure Tours">Adventure Tours</option>
+                        </select>
+                      
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8"><br>
+                    <class="find-btn">
+                        <!-- <a href="#" class="btn-second"><i class="bx bx-search-alt"></i> Find now</a> -->
+                    <input type="submit" name="submit" class="btn-second myclass" value="Find Now" >
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>
+
+<div class="package-area pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-45">
+                    <h5>Choose Your Package</h5>
+                    <h2>Select Your best Package For Your Travel</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            {% for des in destination %}
+            <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp  animated" data-wow-duration="1500ms"
+                data-wow-delay="0ms"
+                style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                <div class="package-card">
+                    <div class="package-thumb">
+                        <img src="/media/{{des.image}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="package-details">
+                        <div class="package-info">
+                            <h5><span>$180</span>/Per Person</h5>
+                            <h5><i class="flaticon-calendar"></i>5 Days/6 night</h5>
+                        </div>
+                        <h3><i class="flaticon-arrival"></i>
+                            <a href="/package/detail/{{des.slug}}">{{ des.name }}</a>
+                        </h3>
+                        <div class="package-rating">
+                            <strong><i class="bx bxs-star"></i><span>8K+</span> Rating</strong>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            {% endfor%}
+        </div>
+       
+    </div>
+</div>
+<div class="destinations-area pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-30">
+                    <h5>Popular Destinations</h5>
+                    <h2>Select Our Best Popular Destinations</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="package-slider-wrap">
+                    <img src="{% static 'assets/images/destination/d-1.png' %}" alt="" class="img-fluid">
+                    <div class="pakage-overlay">
+                        <strong>Pakistan</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row owl-carousel destinations-1">
+                    {% for des in destination %}
+                    <div class="package-card">
+                        <div class="package-thumb">
+                            <img src="/media/{{des.image}}" alt="" class="img-fluid"></div>
+                        <div class="package-details">
+                            <div class="package-info">
+                                <h5><span>$300</span>/Per Person</h5>
+                            </div>
+                            <h3><i class="flaticon-arrival"></i>
+                                <a href="/package/detail/{{des.slug}}">{{ des.name }}</a>
+                            </h3>
+                            <div class="package-rating">
+                                <strong><i class='bx bxs-star'></i><span>8K+</span> Rating</strong>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="achievement-area p-80 mt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-30">
+                    <h5>Why TourX</h5>
+                    <h2>Why you are travel with tourx</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft animated" data-wow-duration="1500ms"
+                data-wow-delay="0ms">
+                <div class="achievement-card mt-30">
+                    <div class="achievement-icon">
+                        <i class="flaticon-guide"></i>
+                    </div>
+                    <h5>2000+ Our worldwide
+                        guide</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft animated" data-wow-duration="1500ms"
+                data-wow-delay="200ms">
+                <div class="achievement-card mt-30">
+                    <div class="achievement-icon">
+                        <i class="flaticon-trust"></i>
+                    </div>
+                    <h5>100% trusted travel agency</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft animated" data-wow-duration="1500ms"
+                data-wow-delay="400ms">
+                <div class="achievement-card mt-30">
+                    <div class="achievement-icon">
+                        <i class="flaticon-experience"></i>
+                    </div>
+                    <h5>10+ year of travel experience</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft animated" data-wow-duration="1500ms"
+                data-wow-delay="600ms">
+                <div class="achievement-card mt-30">
+                    <div class="achievement-icon">
+                        <i class="flaticon-traveller"></i>
+                    </div>
+                    <h5>90% of our traveller happy</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="review-area mt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-40">
+                    <h5>Our Traveller Say</h5>
+                    <h2>What Oue Traveller Say About Us</h2>
+                </div>
+            </div>
+        </div>
+        <div class="review-slider owl-carousel owl-loaded owl-drag">
+
+            <div class="owl-stage-outer">
+                <div class="owl-stage"
+                    style="transform: translate3d(-1481px, 0px, 0px); transition: all 0s ease 0s; width: 5575px; padding-left: 10px; padding-right: 10px;">
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-2.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-3.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-2.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item active" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-3.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-2.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-3.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-2.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Jahid Hassan</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-3.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Shwan Pull</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 355.333px; margin-right: 15px;">
+                        <div class="review-card ">
+                            <div class="reviewer-img">
+                                <img src="{% static 'assets/images/reviewer/reviewer-1.png' %}" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="reviewer-info">
+                                <h3>Dina Jems</h3>
+                                <h5>Traveller</h5>
+                                <p>Fusce aliquam luctus est, eget tincidunt velit scelerisque rhoncus. Aliquam lacinia
+                                    ipsum ornare, porttitor risus nec,
+                                    mattis mauris. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-nav disabled">
+                <button type="button" role="presentation" class="owl-prev"><i class="bx bx-chevron-left"></i></button>
+                <button type="button" role="presentation" class="owl-next"><i class="bx bx-chevron-right"></i></button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="feature-area mt-120 p-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="section-head pb-60">
+                    <h5>Feature Tours</h5>
+                    <h2>See Our Best Popular Package</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="feature-slider owl-carousel owl-loaded owl-drag">
+
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-1719px, 0px, 0px); transition: all 0s ease 0s; width: 6303px;">
+                            <div class="owl-item cloned" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-2.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-2.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-2.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-2.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 543px; margin-right: 30px;">
+                                <div class="feature-card">
+                                    <div class="feature-img">
+                                        <img src="{% static 'assets/images/feature/f-1.png' %}" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="feature-content">
+                                        <a href="package-details.html" class="title">Group Travel Go To Bea
+                                            Amsterdam</a>
+                                        <h5><i class="bx bxs-star"></i><span> 7K+</span>Rating</h5>
+                                        <strong>$150 <span>$200</span></strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i
+                                class="bx bx-chevron-left"></i></button><button type="button" role="presentation"
+                            class="owl-next"><i class="bx bx-chevron-right"></i></button></div>
+                    <div class="owl-dots disabled"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

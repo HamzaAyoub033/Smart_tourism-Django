@@ -1,0 +1,15 @@
+{% autoescape off %}
+
+
+Hi {{user.username}}
+
+Welcome to Smart Tourism Guidance and Hospitality.
+Thanks for Joining us.
+
+Please use the link below to verify your account.
+
+
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+
+{% endautoescape %}
